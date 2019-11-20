@@ -1,0 +1,26 @@
+uic.exe dabiaoqian.ui -o ui_dabiaoqian.h
+
+
+D:\install2\qt5.9.1\5.9.1\msvc2017_64\bin\uic.exe dabiaoqian.ui -o ui_dabiaoqian.h
+
+
+需要一个上传配置：
+{
+"rootdir":"/home/dir/",
+"fil2":"dir1",//相对于rootdir的相对路径。
+...
+}
+
+使得我根据这个配置，我就知道文件该上传到服务器哪个目录下。
+
+
+写个原生php(不要tp):
+dabiaoqian.php 
+接受post 上来的json数据:
+{
+	"signatue":"111",
+	"type":"type1"
+}
+
+
+session_start  是开启session   设置的是   session.save_path
